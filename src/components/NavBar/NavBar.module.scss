@@ -1,7 +1,6 @@
-.NavBar {
-  display: flex;
-  justify-content: space-between;
+$pageWidth: 1200px;
 
+.navBar {
   border-bottom: 1px solid black;
   padding: 5px 20px;
 
@@ -9,7 +8,15 @@
   font-family: raleway;
 }
 
-.NavBar .links {
+.content {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: $pageWidth;
+  margin: auto;
+}
+
+.links {
   display: flex;
   align-items: center;
 
@@ -17,7 +24,7 @@
   font-weight: 500;
 }
 
-.NavBar .links .link {
+.link {
   margin-left: 50px;
   cursor: pointer;
 }
