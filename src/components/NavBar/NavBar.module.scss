@@ -1,5 +1,6 @@
 $pageWidth: 1200px;
 @value medium from '../../styles/breakpoints.scss';
+@value primary, secondary from '../../styles/colours.scss';
 
 .navBar {
   border-bottom: 1px solid black;
@@ -25,10 +26,52 @@ $pageWidth: 1200px;
   font-weight: 500;
 }
 
-.link {
+.wrapper {
+  position: relative;
+  margin-left: 50px;
+  cursor: pointer;
+
   @media medium {
     display: none;
   }
-  margin-left: 50px;
-  cursor: pointer;
+
+  transition: color .2s ease;
+  &:hover {
+    &::after,
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+
+.link {
+  &::after,
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(100% + 3px);
+    width: 0;
+    right: 0;
+    height: 2px;
+    border-radius: 15px;
+  }
+
+  &::before {
+    transition: width .4s cubic-bezier(0.51, 0.18, 0, 0.88) .1s;
+    background: secondary;
+  }
+
+  &::after {
+    transition: width .2s cubic-bezier(0.29, 0.18, 0.26, 0.83);
+    background: primary;
+  }
+
+  &:hover {
+    &::after,
+    &::before {
+      width: 100%;
+      left: 0;
+    }
+  }
 }

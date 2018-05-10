@@ -6,11 +6,20 @@ const NavBar = () => {
     <div className={styles.navBar}>
       <div className={styles.content}>
         <div className='logo'>Andy Edwards</div>
+
         <div className={styles.links}>
-          <div className={styles.link}>Home</div>
-          <div className={styles.link}>Services</div>
-          <div className={styles.link}>Work</div>
-          <div className={styles.link}>Contact</div>
+          <div className={styles.wrapper}>
+            <div className={styles.link}>Home</div>
+          </div>
+          <div className={styles.wrapper}>
+            <div className={styles.link}>Services</div>
+          </div>
+          <div className={styles.wrapper}>
+            <div className={styles.link}>Work</div>
+          </div>
+          <div className={styles.wrapper}>
+            <div className={styles.link}>Contact</div>
+          </div>
         </div>
       </div>
     </div>
