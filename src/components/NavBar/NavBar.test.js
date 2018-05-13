@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './components/NavBar/NavBar';
+import NavBar from './NavBar';
 
-it('renders the nav bar without crashing', () => {
+it('renders the nav bar', () => {
   const div = document.createElement('div');
   ReactDOM.render(<NavBar />, div);
   ReactDOM.unmountComponentAtNode(div);
