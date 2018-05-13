@@ -18,4 +18,4 @@ deploy:
   local_dir: build
   region: $REACT_APP_AWS_BUCKET_REGION
   on:
-    branch: fix/deploy
+    branch: master
