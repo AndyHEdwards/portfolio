@@ -13,7 +13,9 @@ deploy:
   access_key_id: $REACT_APP_AWS_ACCESS_KEY_ID
   secret_access_key: $REACT_APP_AWS_SECRET_ACCESS_KEY
   bucket: $REACT_APP_AWS_BUCKET_NAME
-  skip_cleanup: true
+  endpoint: $REACT_APP_AWS_BUCKET_ENDPOINT
   region: $REACT_APP_AWS_BUCKET_REGION
+  skip_cleanup: true
+  local_dir: build
   on:
     branch: master
