@@ -1,10 +1,11 @@
 $pageWidth: 1200px;
 @value medium from 'styles/breakpoints.scss';
-@value primary, secondary from 'styles/colours.scss';
+@value primary, secondary, white from 'styles/colours.scss';
 
 .navBar {
   border-bottom: 1px solid black;
   padding: 5px 20px;
+  background-color: white;
 
   font-size: 36px;
   font-family: raleway;
