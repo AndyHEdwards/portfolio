@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Services.module.scss';
-import iconStrategy from '../../assets/icons/icon-strategy.svg';
-import lightBulb from '../../assets/icons/icon-light-bulb.svg';
-import iconLaptop from '../../assets/icons/icon-laptop.svg';
+import iconStrategy from 'assets/icons/icon-strategy.svg';
+import lightBulb from 'assets/icons/icon-light-bulb.svg';
+import iconLaptop from 'assets/icons/icon-laptop.svg';
 
 const Services = () => {
   return (

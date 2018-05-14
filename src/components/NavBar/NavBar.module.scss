@@ -1,6 +1,6 @@
 $pageWidth: 1200px;
-@value medium from '../../styles/breakpoints.scss';
-@value primary, secondary from '../../styles/colours.scss';
+@value medium from 'styles/breakpoints.scss';
+@value primary, secondary from 'styles/colours.scss';
 
 .navBar {
   border-bottom: 1px solid black;

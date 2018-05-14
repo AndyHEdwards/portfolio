@@ -1,18 +1,18 @@
-@value lightGrey from '../../styles/colours.scss';
-@value large from '../../styles/breakpoints.scss';
-@value slateGrey from '../../styles/colours.scss';
+@value lightGrey from 'styles/colours.scss';
+@value large from 'styles/breakpoints.scss';
+@value slateGrey from 'styles/colours.scss';
 
 $pageWidth: 1200px;
 
 .ServicesSection {
-  composes: section from '../../styles/layout.scss';
+  composes: section from 'styles/layout.scss';
 
   text-align: center;
   background-color: lightGrey;
 }
 
 .heading {
-  composes: heading from '../../styles/typography.scss';
+  composes: heading from 'styles/typography.scss';
 
   margin: 0  0 30px 0;
 
@@ -43,7 +43,7 @@ $pageWidth: 1200px;
 }
 
 .subHeading {
-  composes: subHeading from '../../styles/typography.scss';
+  composes: subHeading from 'styles/typography.scss';
 
   font-weight: bold;
 
