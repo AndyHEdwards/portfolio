@@ -1,0 +1,64 @@
+@value lightGrey from '../../styles/colours.scss';
+@value large from '../../styles/breakpoints.scss';
+@value slateGrey from '../../styles/colours.scss';
+
+$pageWidth: 1200px;
+
+.ServicesSection {
+  text-align: center;
+  background-color: lightGrey;
+  padding: 60px 10px;
+}
+
+.title {
+  composes: subHeading from '../../styles/typography.scss';
+
+  margin: 0  0 30px 0;
+
+  @media large {
+    margin-bottom: 50px;
+  }
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: $pageWidth;
+  margin: auto;
+
+  @media large {
+    justify-content: space-between;
+  }
+}
+
+.service {
+  font-family: Raleway;
+  color: slateGrey;
+
+  max-width: 334px;
+  margin-bottom: 40px;
+}
+
+.subTitle {
+  composes: title from '../../styles/typography.scss';
+
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  @media large {
+    margin-bottom: 28px;
+  }
+}
+
+.icon {
+  max-width: 100px;
+  margin-bottom: 0;
+
+  @media large {
+    max-width: 150px;
+    margin-bottom: 35px;
+  }
+}

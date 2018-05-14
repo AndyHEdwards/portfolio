@@ -10,3 +10,9 @@
 
   font-size: 36px;
 }
+
+.subHeading {
+  composes: common;
+
+  font-size: 48px;
+}
