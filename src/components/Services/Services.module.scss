@@ -5,9 +5,10 @@
 $pageWidth: 1200px;
 
 .ServicesSection {
+  composes: section from '../../styles/layout.scss';
+
   text-align: center;
   background-color: lightGrey;
-  padding: 60px 10px;
 }
 
 .heading {
