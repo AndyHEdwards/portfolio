@@ -1,9 +1,25 @@
+@value white from 'styles/colours.scss';
+
+$pageWidth: 1200px;
+
 .Work {
   composes: section from 'styles/layout.scss';
 
   text-align: center;
+  background-color: white;
 }
 
 .heading {
   composes: heading from 'styles/typography.scss';
+
+  margin-bottom: 30px;
+}
+
+.examples {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  max-width: $pageWidth;
+  margin: auto;
 }
