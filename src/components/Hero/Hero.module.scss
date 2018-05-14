@@ -10,7 +10,7 @@ $page-width: 1200px;
   background-attachment: fixed;
 }
 
-.titleWrapper {
+.headingWrapper {
   max-width: $page-width;
   margin: auto;
   height: 100%;
@@ -20,8 +20,8 @@ $page-width: 1200px;
   align-items: center;
 }
 
-.title {
-  composes: title from '../../styles/typography.scss';
+.heading {
+  composes: heading from '../../styles/typography.scss';
 
   max-width: 800px;
   margin-top: -30px;

@@ -10,8 +10,8 @@ $pageWidth: 1200px;
   padding: 60px 10px;
 }
 
-.title {
-  composes: subHeading from '../../styles/typography.scss';
+.heading {
+  composes: heading from '../../styles/typography.scss';
 
   margin: 0  0 30px 0;
 
@@ -41,8 +41,8 @@ $pageWidth: 1200px;
   margin-bottom: 40px;
 }
 
-.subTitle {
-  composes: title from '../../styles/typography.scss';
+.subHeading {
+  composes: subHeading from '../../styles/typography.scss';
 
   font-weight: bold;
 
