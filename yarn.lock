@@ -6944,7 +6944,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.6.0, prop-types@^15.6.1:
+prop-types@^15.5.10, prop-types@^15.6.0, prop-types@^15.6.1:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.1.tgz#36644453564255ddda391191fb3a125cbdf654ca"
   dependencies:
@@ -7147,6 +7147,12 @@ react-responsive-modal@^3.0.1:
     react-lifecycles-compat "^3.0.2"
     react-minimalist-portal "^2.2.0"
     react-transition-group "^2.3.1"
+
+react-reveal@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/react-reveal/-/react-reveal-1.2.2.tgz#f47fbc44debc4c185ae2163a215a9e822c7adfef"
+  dependencies:
+    prop-types "^15.5.10"
 
 react-scripts@2.0.0-next.66cc7a90:
   version "2.0.0-next.66cc7a90"
