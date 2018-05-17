@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './Work.module.scss';
 
-import Modal from 'components/Modals/Modal/Modal';
-import ModalContent from 'components/Modals/ModalContent/ModalContent';
+import Modal from 'components/modals/Modal/Modal';
+import ModalContent from 'components/modals/ModalContent/ModalContent';
 
 import iyptFootprints from 'assets/icons/iypt-footprints.svg';
 import reaLogo from 'assets/icons/rea-logo.svg';
