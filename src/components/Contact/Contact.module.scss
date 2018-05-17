@@ -1,0 +1,10 @@
+.Contact {
+  composes: lightGreySection from 'styles/layout.scss';
+
+}
+
+.heading {
+  composes: heading from 'styles/typography.scss';
+
+  text-align: center;
+}
