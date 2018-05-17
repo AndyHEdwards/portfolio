@@ -1,14 +1,12 @@
-@value lightGrey from 'styles/colours.scss';
 @value large from 'styles/breakpoints.scss';
 @value slateGrey from 'styles/colours.scss';
 
 $pageWidth: 1200px;
 
 .ServicesSection {
-  composes: section from 'styles/layout.scss';
+  composes: lightGreySection from 'styles/layout.scss';
 
   text-align: center;
-  background-color: lightGrey;
 }
 
 .heading {
