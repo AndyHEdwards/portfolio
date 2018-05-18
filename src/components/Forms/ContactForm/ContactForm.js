@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ContactForm.module.scss';
 import TextField from '../TextField/TextField';
 import TextareaField from '../TextareaField/TextareaField';
+import Button from '../../Button/Button';
 
 function validate(name, email, message) {
   // true means invalid, so conditions are reversed
@@ -23,6 +24,7 @@ export default class ContactForm extends React.Component {
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.canBeSubmitted = this.canBeSubmitted.bind(this);
   }
 
   handleInputChange(event) {
@@ -36,17 +38,19 @@ export default class ContactForm extends React.Component {
   }
 
   handleSubmit = (evt) => {
-    if (!this.canBeSubmitted()) {
-      evt.preventDefault();
-      return;
-    }
-    const { name, email, message } = this.state;
-    alert(`Signed up with name: ${name}, email: ${email}, message: ${message}`);
+    evt.preventDefault();
+    console.log('test');
+  }
+
+  canBeSubmitted() {
+    const errors = validate(this.state.name, this.state.email, this.state.message);
+    const isDisabled = Object.keys(errors).some(x => errors[x]);
+    return !isDisabled;
   }
 
   render(props) {
     const errors = validate(this.state.name, this.state.email, this.state.message);
-    const isEnabled = !Object.keys(errors).some(x => errors[x]);
+    const isDisabled = Object.keys(errors).some(x => errors[x]);
 
     return (
       <form onSubmit={this.handleSubmit} className={styles.ContactForm}>
@@ -81,7 +85,12 @@ export default class ContactForm extends React.Component {
             />
           </div>
         </div>
-        <button disabled={!isEnabled}>Sign up</button>
+        <div className={styles.submitRow}>
+          <Button disabled={isDisabled}
+            text='Send'
+            handleClick={this.handleSubmit}
+          />
+        </div>
       </form>
     );
   }
