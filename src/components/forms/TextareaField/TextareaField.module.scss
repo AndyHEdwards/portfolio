@@ -1,0 +1,36 @@
+@value revealTransitionTime, revealedFontSize from 'styles/formFields.scss';
+$revealdTranslateY: translateY(-80px);
+
+.TextareaField {
+  composes: textareaField from 'styles/formFields.scss';
+}
+
+.labelText {
+  composes: labelText from 'styles/formFields.scss';
+
+  transform: translateY(-72px);
+}
+
+.reveal {
+  composes: reveal from 'styles/formFields.scss';
+
+  transform: $revealdTranslateY;
+}
+
+.input {
+  composes: textFieldInput from 'styles/formFields.scss';
+
+  margin: 24px 0 -22px 0;
+  min-height: 80px;
+
+  resize: none;
+  height: 100%;
+
+  &:focus + .labelText {
+    transform: $revealdTranslateY;
+  }
+}
+
+.error {
+  composes: error from 'styles/formFields.scss';
+}

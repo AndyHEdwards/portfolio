@@ -1,11 +1,22 @@
+$gridWidth: 20px;
+
 .ContactForm {
-
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
 }
 
-.input {
-  outline: none;
+.nameEmailRow {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: $gridWidth;
 }
 
-.error {
-  border: 1px solid red;
+.nameField, .emailField {
+  width: 100%;
+}
+
+.nameField {
+  margin-right: $gridWidth;
 }
