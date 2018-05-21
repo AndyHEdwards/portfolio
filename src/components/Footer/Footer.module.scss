@@ -1,0 +1,19 @@
+.Footer {
+  composes: section from 'styles/layout.scss';
+
+  background-color: white;
+}
+
+.logo {
+  font-family: Sacramento;
+  text-align: center;
+  font-size: 48px;
+}
+
+.social {
+  text-align: center;
+}
+
+.icon {
+  max-width: 30px;
+}
