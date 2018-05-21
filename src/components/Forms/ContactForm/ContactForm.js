@@ -4,22 +4,6 @@ import TextField from '../TextField/TextField';
 import TextareaField from '../TextareaField/TextareaField';
 import Button from '../../Button/Button';
 
-import sgMail from '@sendgrid/mail';
-sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
-
-function sendMail(name, email, message) {
-  const msg = {
-    to: 'andyhedwards@gmail.com',
-    from: 'andy@andyedwards.io',
-    subject: 'Important - Contact from andyedwards.io',
-    text: message,
-    html: `<strong>Name: ${name} <br/><br/>Email: ${email} <br/><br/>Message: ${message}</strong>`,
-    headers: {"Priority": "Urgent", "Importance": "high"},
-  };
-
-  sgMail.send(msg)
-}
-
 function validate(name, email, message) {
   // true means invalid, so conditions are reversed
   return {
@@ -37,8 +21,10 @@ export default class ContactForm extends React.Component {
       name: '',
       email: '',
       message: '',
+      success: false,
     };
 
+    this.sendMail = this.props.sendMail.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
     this.canBeSubmitted = this.canBeSubmitted.bind(this);
   }
@@ -56,7 +42,7 @@ export default class ContactForm extends React.Component {
   handleSubmit = (evt) => {
     evt.preventDefault();
     if (this.canBeSubmitted()) {
-      sendMail(this.state.name, this.state.email, this.state.message);
+      this.sendMail(this.state.name, this.state.email, this.state.message);
     }
   }
 
