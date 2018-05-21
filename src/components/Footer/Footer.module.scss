@@ -1,6 +1,7 @@
 .Footer {
   composes: section from 'styles/layout.scss';
 
+  position: relative;
   background-color: white;
 }
 
@@ -16,4 +17,14 @@
 
 .icon {
   max-width: 30px;
+}
+
+.copyright {
+  font-size: 11px;
+  font-family: Raleway;
+  margin: 0;
+
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }

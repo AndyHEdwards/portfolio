@@ -13,6 +13,8 @@ const Footer = () => {
           <img className={styles.icon} src={linkedinLogo} alt='linkedin logo' />
         </a>
       </div>
+
+      <p className={styles.copyright}>Copyright © Andy Edwards 2018.</p>
     </section>
   );
 }
