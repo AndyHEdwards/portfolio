@@ -20,7 +20,7 @@ export default class Modal extends React.Component {
 
     return (
       <div className={styles.trigger} onClick={this.onOpenModal}>
-        <ResponsiveModal open={open} onClose={this.onCloseModal} center>
+        <ResponsiveModal open={open} onClose={this.onCloseModal} center classNames={{ modal: styles.modal, closeIcon: styles.closeIcon }}>
           {this.props.children}
         </ResponsiveModal>
 
