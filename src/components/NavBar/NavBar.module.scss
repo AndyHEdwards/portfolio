@@ -1,4 +1,4 @@
-@value primary, secondary, white from 'styles/colours.scss';
+@value primary, secondary, white, slateGrey from 'styles/colours.scss';
 @value medium from 'styles/breakpoints.scss';
 
 $pageWidth: 1200px;
@@ -52,6 +52,9 @@ $pageWidth: 1200px;
 }
 
 .link {
+  text-decoration: none;
+  color: slateGrey;
+
   &::after,
   &::before {
     content: '';

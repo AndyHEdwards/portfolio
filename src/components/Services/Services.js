@@ -7,7 +7,7 @@ import Fade from 'react-reveal/Fade';
 
 const Services = () => {
   return (
-    <section className={styles.ServicesSection}>
+    <section className={styles.ServicesSection} id='services'>
       <Fade bottom fraction={0.5} duration={1300}>
         <h2 className={styles.heading}>Services</h2>
       </Fade>

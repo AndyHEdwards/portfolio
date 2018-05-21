@@ -11,7 +11,7 @@ import landcheckerLogo from 'assets/icons/landchecker-logo.svg';
 
 const Work = () => {
   return (
-    <section className={styles.Work}>
+    <section className={styles.Work} id='work'>
       <h2 className={styles.heading}>Work</h2>
 
       <div className={styles.examples}>
