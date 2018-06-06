@@ -1,5 +1,5 @@
 @value primary, secondary, white, slateGrey from 'styles/colours.scss';
-@value medium from 'styles/breakpoints.scss';
+@value small, medium, large from 'styles/breakpoints.scss';
 
 $pageWidth: 1200px;
 
@@ -30,16 +30,16 @@ $pageWidth: 1200px;
 
   font-size: 18px;
   font-weight: 500;
+
+  @media small {
+    display: none;
+  }
 }
 
 .wrapper {
   position: relative;
   margin-left: 50px;
   cursor: pointer;
-
-  @media medium {
-    display: none;
-  }
 
   transition: color .2s ease;
   &:hover {
@@ -83,4 +83,17 @@ $pageWidth: 1200px;
       left: 0;
     }
   }
+}
+
+.mobileNav {
+  display: none;
+
+  @media small {
+    display: block;
+  }
+}
+
+.mobileLink {
+  text-decoration: none;
+  color: white;
 }
