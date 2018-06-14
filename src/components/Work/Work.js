@@ -8,6 +8,7 @@ import iyptFootprints from 'assets/icons/iypt-footprints.svg';
 import reaLogo from 'assets/icons/rea-logo.svg';
 import cleversparkyLogo from 'assets/icons/cleversparky-logo.svg';
 import landcheckerLogo from 'assets/icons/landchecker-logo.svg';
+import rmitLogo from 'assets/icons/rmit-logo.svg';
 
 const Work = () => {
   return (
@@ -45,6 +46,14 @@ const Work = () => {
             description='Check the planning permissions of any parcel of land in Victoria.'
             technologyDescrtiption='Emberjs Frontend, Rails BAckend, NodeJs assets'
             mockupPath='landchecker-mockup'
+          />
+        </Modal>
+        <Modal imgSrc={rmitLogo} triggerText='RMIT Ballot Web App'>
+          <ModalContent
+            title='RMIT Ballot App'
+            description='The RMIT Ballot web app gives students an easy and simple way to ballot for courses and set preferences for the studios they wish to take through the ease of their own desktop or mobile device.'
+            technologyDescrtiption='This app was built entirely with Ruby on Rails.'
+            mockupPath='rmit-mockup'
           />
         </Modal>
       </div>
