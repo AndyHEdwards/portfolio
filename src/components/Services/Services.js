@@ -32,7 +32,7 @@ const Services = () => {
           <Fade bottom delay={2500} duration={1300}>
             <img className={styles.icon} src={iconLaptop} alt='icon-Laptop' />
             <div className={styles.subHeading}>Development</div>
-            <div className={styles.content}>With many years of development experience under my belt, I can build your product.</div>
+            <div className={styles.content}>With many years of development experience under my belt, I can build, host and maintain your product.</div>
           </Fade>
         </div>
       </div>
