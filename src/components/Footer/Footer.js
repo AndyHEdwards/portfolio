@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './Footer.module.scss';
 
 import linkedinLogo from 'assets/icons/linkedin-logo.png';
+import githubLogo from 'assets/icons/github-logo.png';
 
 const Footer = () => {
   return (
@@ -11,6 +12,9 @@ const Footer = () => {
       <div className={styles.social}>
         <a href='https://www.linkedin.com/in/andy-edwards-4073a010b/' target='_blank' rel="noopener noreferrer">
           <img className={styles.icon} src={linkedinLogo} alt='linkedin logo' />
+        </a>
+        <a href='https://www.github.com/AndyHEdwards' target='_blank' rel="noopener noreferrer">
+          <img className={styles.icon} src={githubLogo} alt='github logo' />
         </a>
       </div>
 
