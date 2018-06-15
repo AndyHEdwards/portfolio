@@ -57,6 +57,7 @@ const Work = () => {
           />
         </Modal>
       </div>
+      <p className={styles.contatMe}>If you'd like to see more examples of my work, please feel free to get in contact with me!</p>
     </section>
   );
 }
