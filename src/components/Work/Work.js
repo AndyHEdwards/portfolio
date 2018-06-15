@@ -20,31 +20,31 @@ const Work = () => {
           <ModalContent
             title='Yarning Straight Out'
             description='Yarning Straight Out is Victoria’s Drug and Alcohol info tool for young Aboriginal People.'
-            technologyDescrtiption='Yarning Straight Out is a responsive client side application built with EmberJs. This app is a purely client side application as no user user data is stored, so there is no backend. It is hosted with AWS and uses google analytics to track user interaction. It also utilises various differnet libraries for sound playback and videos.'
+            technologyDescrtiption='Yarning Straight Out is a responsive client side application built with Ember.js. This app is a purely client side application as no user user data is stored, so there is no backend. It is hosted with AWS and uses google analytics to track user interaction. It also utilises various differnet libraries for sound playback and videos.'
             mockupPath='iypt-mockups'
           />
         </Modal>
         <Modal imgSrc={reaLogo} triggerText='Lead Management System'>
           <ModalContent
             title='REA LMS'
-            description='A lead management system for Realestate.com.au'
-            technologyDescrtiption='This application is made from two seperate Emberjs apps running off a Ruby on Rails Backend. The two client side apps have a shared component library to encapsulate the reusable components code.'
+            description='The REA LMS app was built to streamline an archaic lead management system.'
+            technologyDescrtiption='This application is made from two seperate Ember.js apps running off a Ruby on Rails Backend. The two client side apps have a shared component library to encapsulate the reusable components code.'
             mockupPath='rea-mockup'
           />
         </Modal>
         <Modal imgSrc={cleversparkyLogo} triggerText=''>
           <ModalContent
             title='Cleversparky'
-            description='Admin panel for Cleversparky ios app.'
-            technologyDescrtiption='Emberjs Frontend, Rails BAckend'
+            description='The Cleversparky Web App allows administrators and business owners to monitor and manage their site emergency lighting data in a webview.'
+            technologyDescrtiption='Cleversparky comprises of an IOS app used by technicians, a responsive Ember.js web app for administrators and a Ruby on Rails Backend.'
             mockupPath='cleversparky-mockup'
           />
         </Modal>
         <Modal imgSrc={landcheckerLogo} triggerText=''>
           <ModalContent
             title='Landchecker'
-            description='Check the planning permissions of any parcel of land in Victoria.'
-            technologyDescrtiption='Emberjs Frontend, Rails BAckend, NodeJs assets'
+            description='Landchecker is a property planning web application that allows buyers, selling agents, architects and land developers to easily access planning zones and overlays information in Victoria on an interactive map.'
+            technologyDescrtiption='Landchecker is made up of an Ember.js web app, a Ruby on Rails backend and a Node.js server that serves static assets for the interactive map.'
             mockupPath='landchecker-mockup'
           />
         </Modal>
@@ -52,7 +52,7 @@ const Work = () => {
           <ModalContent
             title='RMIT Ballot App'
             description='The RMIT Ballot web app gives students an easy and simple way to ballot for courses and set preferences for the studios they wish to take through the ease of their own desktop or mobile device.'
-            technologyDescrtiption='This app was built entirely with Ruby on Rails.'
+            technologyDescrtiption='The RMIT Ballot Web App is a responsive app built entirely with Ruby on Rails.'
             mockupPath='rmit-mockup'
           />
         </Modal>
