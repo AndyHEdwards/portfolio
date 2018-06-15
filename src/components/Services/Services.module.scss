@@ -1,11 +1,12 @@
 @value large from 'styles/breakpoints.scss';
-@value slateGrey from 'styles/colours.scss';
+@value white from 'styles/colours.scss';
 
 $pageWidth: 1200px;
 
 .ServicesSection {
-  composes: lightGreySection from 'styles/layout.scss';
+  composes: section from 'styles/layout.scss';
 
+  background-color: white;
   text-align: center;
 }
 

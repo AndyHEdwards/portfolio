@@ -3,10 +3,9 @@
 $pageWidth: 1200px;
 
 .Work {
-  composes: section from 'styles/layout.scss';
+  composes: lightGreySection from 'styles/layout.scss';
 
   text-align: center;
-  background-color: white;
 }
 
 .heading {

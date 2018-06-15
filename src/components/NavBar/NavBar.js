@@ -42,6 +42,9 @@ export default class NavBar extends React.Component {
               <AnchorLink className={styles.link} href='#work'>Work</AnchorLink>
             </div>
             <div className={styles.wrapper}>
+              <AnchorLink className={styles.link} href='#skills'>Skills</AnchorLink>
+            </div>
+            <div className={styles.wrapper}>
               <AnchorLink className={styles.link} href='#contact'>Contact</AnchorLink>
             </div>
           </div>
@@ -51,6 +54,7 @@ export default class NavBar extends React.Component {
               <AnchorLink onClick={ this.handleMobileNavClick } className={styles.mobileLink} href='#hero'>Home</AnchorLink>
               <AnchorLink onClick={ this.handleMobileNavClick } className={styles.mobileLink} href='#services'>Services</AnchorLink>
               <AnchorLink onClick={ this.handleMobileNavClick } className={styles.mobileLink} href='#work'>Work</AnchorLink>
+              <AnchorLink onClick={ this.handleMobileNavClick } className={styles.mobileLink} href='#skills'>Skills</AnchorLink>
               <AnchorLink onClick={ this.handleMobileNavClick } className={styles.mobileLink} href='#contact'>Contact</AnchorLink>
             </Menu>
           </div>
