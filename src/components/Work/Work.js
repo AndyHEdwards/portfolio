@@ -6,9 +6,6 @@ import Fade from 'react-reveal/Fade';
 import Modal from 'components/modals/Modal/Modal';
 import ModalContent from 'components/modals/ModalContent/ModalContent';
 
-import iyptFootprints from 'assets/icons/iypt-footprints.svg';
-import reaLogo from 'assets/icons/rea-logo.svg';
-import cleversparkyLogo from 'assets/icons/cleversparky-logo.svg';
 import landcheckerLogo from 'assets/icons/landchecker-logo.svg';
 import rmitLogo from 'assets/icons/rmit-logo.svg';
 import andyEdwardsLogo from 'assets/icons/andy-edwards-logo.png';
