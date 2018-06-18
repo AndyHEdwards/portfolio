@@ -34,7 +34,7 @@ const Work = () => {
               title='Cleversparky'
               description='The Cleversparky Web App allows administrators and business owners to monitor and manage their site emergency lighting data in a webview.'
               technologyDescrtiption='Cleversparky comprises of an IOS app used by technicians, a responsive Ember.js web app for administrators and a Ruby on Rails Backend.'
-              mockupPath='cleversparky-mockup'
+              mockupPath='cleversparky-mockup-reverse'
             />
           </Fade>
         </div>
