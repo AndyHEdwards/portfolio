@@ -1,3 +1,5 @@
+@value primary, slateGrey from 'styles/colours.scss';
+
 $page-width: 1200px;
 
 .Hero {
@@ -42,8 +44,13 @@ $page-width: 1200px;
   margin-top: -30px;
 }
 
+.rotatingText {
+  color: primary;
+}
+
 :global(.react-rotating-text-cursor) {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  color: slateGrey;
 }
 
 @keyframes blinking-cursor {

@@ -1,3 +1,4 @@
+@value primary, secondary from 'styles/colours.scss';
 @value small from 'styles/breakpoints.scss';
 
 .content {
@@ -23,6 +24,12 @@
 
 .title, .subTitle {
   margin: 0 0 8px 0;
+
+  color: primary;
+}
+
+.subTitle {
+  color: secondary;
 }
 
 .description, .technologyDescrtiption {
