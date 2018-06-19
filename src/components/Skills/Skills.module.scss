@@ -1,3 +1,5 @@
+$pageWidth: 1140px;
+
 .Skills {
   composes: section from 'styles/layout.scss';
 
@@ -16,6 +18,9 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  max-width: $pageWidth;
+  margin: auto;
 }
 
 .logo {
