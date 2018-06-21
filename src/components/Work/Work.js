@@ -74,7 +74,7 @@ const Work = () => {
           <ModalContent
             title='My Portfolio'
             description='This portfolio was designed and developed by me.'
-            technologyDescrtiption='I built this portfolio using React.js for my own personal learning. It is hosted on S3 and uses Route 53 as a DNS and Cloudfront as a CDN. '
+            technologyDescrtiption="I used building this portfolio as an opportunity to learn a lot and upskill in a few differnet areas. I did courses in web design to learn best practices. It is built using React.js and is hosted on S3 and uses Route 53 as a DNS and Cloudfront as a CDN. It has been a really fun learning experience and I've had a great time using react, which I hope to use more in the future."
           />
         </Modal>
       </div>
