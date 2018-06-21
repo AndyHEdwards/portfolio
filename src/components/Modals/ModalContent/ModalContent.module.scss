@@ -1,0 +1,66 @@
+@value primary, secondary from 'styles/colours.scss';
+@value small from 'styles/breakpoints.scss';
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 0px;
+}
+
+.reversed {
+  flex-direction: row-reverse;
+
+  .mockup {
+    margin: 0 30px 0 0;
+
+    @media small {
+      margin: 0;
+    }
+  }
+}
+
+.title, .subTitle {
+  margin: 0 0 8px 0;
+
+  color: primary;
+}
+
+.subTitle {
+  color: secondary;
+}
+
+.description, .technologyDescrtiption {
+  margin: 0;
+}
+
+.description {
+  margin-bottom: 20px;
+}
+
+.text {
+  max-width: 320px;
+  font-family: Raleway;
+  margin: 20px 0;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+}
+
+.mockup {
+  width: 100%;
+  max-width: 550px;
+  margin: 0 -10px 0 50px;
+
+  @media small {
+    margin: 0;
+  }
+}
+
+.smallMockup {
+  max-width: 440px;
+}

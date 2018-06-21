@@ -1,0 +1,11 @@
+@value lightGrey from 'styles/colours.scss';
+
+.section {
+  padding: 60px 10px;
+}
+
+.lightGreySection {
+  composes: section;
+
+  background-color: lightGrey;
+}

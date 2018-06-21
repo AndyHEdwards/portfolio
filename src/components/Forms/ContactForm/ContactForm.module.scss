@@ -1,0 +1,27 @@
+$gridWidth: 20px;
+
+.ContactForm {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+}
+
+.nameEmailRow {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: $gridWidth;
+}
+
+.nameField, .emailField {
+  width: 100%;
+}
+
+.nameField {
+  margin-right: $gridWidth;
+}
+
+.submitRow {
+  text-align: right;
+  margin-top: $gridWidth;
+}

@@ -1,0 +1,20 @@
+@value slateGrey from './colours.scss';
+
+.common {
+  font-family: Raleway;
+  color: slateGrey;
+
+  margin: 0;
+}
+
+.heading {
+  composes: common;
+
+  font-size: 48px;
+}
+
+.subHeading {
+  composes: common;
+
+  font-size: 28px;
+}
