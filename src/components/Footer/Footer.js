@@ -3,6 +3,8 @@ import styles from './Footer.module.scss';
 
 import linkedinLogo from 'assets/icons/linkedin-logo.png';
 import githubLogo from 'assets/icons/github-logo.png';
+import instagramIcon from 'assets/icons/instagram-icon.png';
+import emailIcon from 'assets/icons/email-icon.png';
 
 const Footer = () => {
   return (
@@ -15,6 +17,12 @@ const Footer = () => {
         </a>
         <a href='https://www.github.com/AndyHEdwards' target='_blank' rel="noopener noreferrer">
           <img className={styles.icon} src={githubLogo} alt='github logo' />
+        </a>
+        <a href='https://www.instagram.com/andy_edwards1/' target='_blank' rel="noopener noreferrer">
+          <img className={styles.icon} src={instagramIcon} alt='github logo' />
+        </a>
+        <a href='mailto:andyhedwards@gmail.com'>
+          <img className={styles.icon} src={emailIcon} alt='github logo' />
         </a>
       </div>
 
