@@ -20,8 +20,8 @@ const Work = () => {
           <Fade right duration={1700} fraction={0.7}>
             <ModalContent
               title='Yarning Straight Out'
-              description='Yarning Straight Out is Victoria’s Drug and Alcohol info tool for young Aboriginal People.'
-              technologyDescrtiption='Yarning Straight Out is a responsive client side application built with Ember.js. This app is a purely client side application as no user user data is stored, so there is no backend. It is hosted with AWS and uses google analytics to track user interaction. It also utilises various differnet libraries for sound playback and videos.'
+              description='Yarning Straight Out is Australia’s Drug and Alcohol info tool for young Aboriginal People.'
+              technologyDescrtiption='Yarning Straight Out is a responsive client side application built with Ember.js. This app is a purely client side application as no user user data is stored, so there is no backend. It is hosted with AWS and uses Google analytics to track user interaction. It also utilises various libraries for sound playback and videos.'
               mockupPath='iypt-mockups'
             />
           </Fade>
@@ -33,7 +33,7 @@ const Work = () => {
               reversed
               title='Cleversparky'
               description='The Cleversparky Web App allows administrators and business owners to monitor and manage their site emergency lighting data in a webview.'
-              technologyDescrtiption='Cleversparky comprises of an IOS app used by technicians, a responsive Ember.js web app for administrators and a Ruby on Rails Backend.'
+              technologyDescrtiption='Cleversparky comprises of an IOS app used by technicians, a responsive Ember.js web app for administrators and a Ruby on Rails backend.'
               mockupPath='cleversparky-mockup-reverse'
             />
           </Fade>
@@ -44,7 +44,7 @@ const Work = () => {
             <ModalContent
               title='REA LMS'
               description='The REA LMS app was built to streamline an archaic lead management system.'
-              technologyDescrtiption='This application is made from two seperate Ember.js apps running off a Ruby on Rails Backend. The two client side apps have a shared component library to encapsulate the reusable components code.'
+              technologyDescrtiption='This application is made from two separate Ember.js apps running off a Ruby on Rails Backend. The two client side apps have a shared component library to encapsulate the reusable components code.'
               mockupPath='rea-mockup'
             />
           </Fade>
@@ -55,7 +55,7 @@ const Work = () => {
         <Modal imgSrc={landcheckerLogo} triggerText=''>
           <ModalContent
             title='Landchecker'
-            description='Landchecker is a property planning web application that allows buyers, selling agents, architects and land developers to easily access planning zones and overlays information in Victoria on an interactive map.'
+            description='Landchecker is a property planning web application that allows buyers, selling agents, architects and land developers to easily access planning zones and overlays information in Victoria, Australia on an interactive map.'
             technologyDescrtiption='Landchecker is made up of an Ember.js web app, a Ruby on Rails backend and a Node.js server that serves static assets for the interactive map.'
             smallMockup
             mockupPath='landchecker-mockup'
@@ -79,7 +79,7 @@ const Work = () => {
         </Modal>
       </div>
 
-      <p className={styles.contatMe}>If you'd like to see more examples of my work, please feel free to get in contact with me!</p>
+      <p className={styles.contatMe}>If you'd like to see more examples of my work, please don't hesitate to get in contact with me!</p>
     </section>
   );
 }

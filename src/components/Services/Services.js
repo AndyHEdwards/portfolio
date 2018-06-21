@@ -18,21 +18,21 @@ const Services = () => {
           <Fade bottom delay={400} duration={1300}>
             <img className={styles.icon} src={iconStrategy} alt='icon-Strategy' />
             <div className={styles.subHeading}>Strategy</div>
-            <div className={styles.content}>From inception to creatoin I can help make your dream product become a reality all the way through the build process</div>
+            <div className={styles.content}>From inception to creation I can help make your dream product or service become a reality all the way through the build process</div>
           </Fade>
         </div>
         <div className={styles.service}>
           <Fade bottom delay={1400} duration={1300}>
             <img className={styles.icon} src={lightBulb} alt='icon-lightBulb' />
             <div className={styles.subHeading}>Design</div>
-            <div className={styles.content}>With my up to date knowloedge of the lateset and greatest design trends, I blend seamless functionality with cutting edge design.</div>
+            <div className={styles.content}>With my up-to-date knowledge of the latest and greatest design trends, I blend seamless functionality with cutting edge design</div>
           </Fade>
         </div>
         <div className={styles.service}>
           <Fade bottom delay={2500} duration={1300}>
             <img className={styles.icon} src={iconLaptop} alt='icon-Laptop' />
             <div className={styles.subHeading}>Development</div>
-            <div className={styles.content}>With many years of development experience under my belt, I can build, host and maintain your product.</div>
+            <div className={styles.content}>Having many years of development experience under my belt, I can build, host and maintain your product</div>
           </Fade>
         </div>
       </div>
