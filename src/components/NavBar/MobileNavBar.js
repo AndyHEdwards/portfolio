@@ -7,7 +7,7 @@ export default  {
     top: '23px'
   },
   bmBurgerBars: {
-    background: '#373a47',
+    background: '#4BA3C3',
     height: '12%'
   },
   bmCrossButton: {
@@ -15,7 +15,7 @@ export default  {
     width: '24px'
   },
   bmCross: {
-    background: '#bdc3c7',
+    background: '#4BA3C3',
     height: '30px',
   },
   bmMenuWrap: {
@@ -24,7 +24,7 @@ export default  {
     height: '100vh',
   },
   bmMenu: {
-    background: '#373a47',
+    backgroundColor: 'rgba(255, 255, 255, 0.95)',
     width: '100%',
     display: 'flex',
     alignItems: 'center',
