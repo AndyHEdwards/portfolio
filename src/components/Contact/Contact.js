@@ -3,9 +3,6 @@ import styles from './Contact.module.scss';
 import ContactForm from '../forms/ContactForm/ContactForm';
 import ContactSuccess from '../forms/ContactSuccess/ContactSuccess';
 
-import sgMail from '@sendgrid/mail';
-sgMail.setApiKey(process.env.REACT_APP_SENDGRID_API_KEY);
-
 export default class Contact extends React.Component {
   constructor(props) {
     super(props);
@@ -17,16 +14,7 @@ export default class Contact extends React.Component {
   }
 
   sendMail(name, email, message) {
-    const msg = {
-      to: 'andyhedwards@gmail.com',
-      from: 'andy@andyedwards.io',
-      subject: 'Important - Contact from andyedwards.io',
-      text: message,
-      html: `<strong>Name: ${name} <br/><br/>Email: ${email} <br/><br/>Message: ${message}</strong>`,
-      headers: {"Priority": "Urgent", "Importance": "high"},
-    };
-
-    sgMail.send(msg).then(() => {
+    fetch(`${process.env.REACT_APP_AWS_EMAIL_LAMBDA_API_GATEWAY_ENDPOINT}?name=${name}&email=${email}&message=${message}`).then(() => {
       this.setState({success: true});
     });
   }

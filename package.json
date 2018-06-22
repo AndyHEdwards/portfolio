@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sendgrid/mail": "^6.2.1",
     "node-sass": "^4.9.0",
     "react": "^16.3.2",
     "react-anchor-link-smooth-scroll": "^1.0.9",
