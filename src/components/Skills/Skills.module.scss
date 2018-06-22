@@ -1,0 +1,31 @@
+$pageWidth: 1140px;
+
+.Skills {
+  composes: section from 'styles/layout.scss';
+
+  background-color: white;
+  text-align: center;
+}
+
+.heading {
+  composes: heading from 'styles/typography.scss';
+
+  margin-bottom: 30px;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  max-width: $pageWidth;
+  margin: auto;
+}
+
+.logo {
+  max-width: 90px;
+  max-height: 90px;
+
+  margin: 30px;
+}

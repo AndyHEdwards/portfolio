@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.1",
+    "node-sass": "^4.9.0",
+    "react": "^16.3.2",
+    "react-anchor-link-smooth-scroll": "^1.0.9",
+    "react-burger-menu": "^2.4.4",
+    "react-dom": "^16.3.2",
+    "react-ga": "^2.5.3",
+    "react-headroom": "^2.2.2",
+    "react-responsive-modal": "^3.0.1",
+    "react-reveal": "^1.2.2",
+    "react-rotating-text": "^1.2.1",
+    "react-scripts": "2.0.0-next.3e165448"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "not ie < 11"
+    ]
+  }
+}
