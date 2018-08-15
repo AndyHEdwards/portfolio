@@ -8,7 +8,7 @@ const Hero = () => {
     <section className={styles.Hero} id='hero'>
       <div className={styles.headingWrapper}>
         <h1 className={styles.heading}>
-          Hi, my name is Andy <br/> I am a <span className={styles.rotatingText}><ReactRotatingText styles={styles.textRotator} items={['responsive web developer', 'traveller', 'beer drinker', 'book lover']} /></span>
+          Hi, my name is Andy <br/> I am a <span className={styles.rotatingText}><ReactRotatingText styles={styles.textRotator} items={['responsive web developer', 'designer', 'traveller', 'mountain biker', 'book lover']} /></span>
         </h1>
       </div>
     </section>
